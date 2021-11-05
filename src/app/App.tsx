@@ -4,7 +4,7 @@ import Card from './components/Card/Card';
 import classes from './App.module.css';
 
 function App(): JSX.Element {
-  const [companies, setCompanies] = useState([
+  const [companies, _setCompanies] = useState([
     {
       title: 'LinkedIn',
       description: 'Lorem ipsum bal bla fiedelbumm',
