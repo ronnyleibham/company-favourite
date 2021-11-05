@@ -1,9 +1,13 @@
 .card {
   /* width: 90%; */
-  background-color: #2a9d8f;
+  background-color: #e76f51;
   padding: 10px 20px;
   border-radius: 5px;
   margin: 20px 20px;
+}
+
+.card--applied {
+  background-color: #2a9d8f;
 }
 
 .h2 {

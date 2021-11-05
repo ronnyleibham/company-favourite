@@ -12,6 +12,8 @@ function Form({ onSubmit }: FormProps): JSX.Element {
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     onSubmit({ companyName, companyDescription });
+    setCompanyName('');
+    setCompanyDescription('');
   }
 
   return (
