@@ -1,0 +1,46 @@
+.form {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  row-gap: 20px;
+  margin: auto;
+  width: 400px;
+  padding-top: 20px;
+
+  /* grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  align-content: start; */
+
+  /* width: 100%; */
+}
+
+.label {
+  font-size: 25px;
+  color: #264653;
+}
+
+.input {
+  /* display: block; */
+  width: 100%;
+  height: 30px;
+  border-color: #f4a261;
+  border-radius: 5px;
+}
+
+.textarea {
+  width: 100%;
+  font-family: inherit;
+  border-color: #f4a261;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.submit {
+  padding: 10px 40px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #e76f51;
+  color: white;
+  border-color: none;
+  margin-bottom: 50px;
+}
