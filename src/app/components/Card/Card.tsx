@@ -4,9 +4,10 @@ import classes from './Card.module.css';
 type CardProps = {
   header: string;
   description: string;
+  priority: number;
 };
 
-function Card({ header, description }: CardProps): JSX.Element {
+function Card({ header, description, priority }: CardProps): JSX.Element {
   const [applied, setApplied] = useState(false);
 
   function modifyApplied() {
@@ -21,8 +22,23 @@ function Card({ header, description }: CardProps): JSX.Element {
       <p className={classes.text}>{description}</p>
       <input
         type="checkbox"
+        id="checkbox"
         className={classes.checkbox}
         onClick={modifyApplied}
+      />
+      <label className={classes.labelChecklist} htmlFor="checklist">
+        applied
+      </label>
+      <label className={classes.labelPriority} htmlFor="priority">
+        Priority
+      </label>
+      <input
+        type="number"
+        id="priority"
+        min="1"
+        max="5"
+        step="1"
+        value={priority}
       />
     </section>
   );

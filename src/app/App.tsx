@@ -9,23 +9,33 @@ function App(): JSX.Element {
     {
       title: 'LinkedIn',
       description: 'Lorem ipsum bal bla fiedelbumm',
+      priority: 2,
     },
     {
       title: 'Xing',
       description: 'Lorem ipsum bal bla fiedelbumm',
+      priority: 4,
     },
     {
       title: 'Apple Europe',
       description: 'Lorem ipsum bal bla fiedelbumm',
+      priority: 5,
     },
   ]);
+
+  // function updatePriority
 
   function handleSubmit(todo: {
     companyName: string;
     companyDescription: string;
+    companyPriority: number;
   }) {
     setCompanies([
-      { title: todo.companyName, description: todo.companyDescription },
+      {
+        title: todo.companyName,
+        description: todo.companyDescription,
+        priority: todo.companyPriority,
+      },
       ...companies,
     ]);
   }
@@ -38,6 +48,7 @@ function App(): JSX.Element {
         <Card
           header={singleCompany.title}
           description={singleCompany.description}
+          priority={singleCompany.priority}
         ></Card>
       ))}
     </div>

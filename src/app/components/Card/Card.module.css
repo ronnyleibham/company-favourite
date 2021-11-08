@@ -21,3 +21,12 @@
   color: white;
   padding: 0 10px;
 }
+
+.labelChecklist {
+  color: white;
+  margin-right: 60px;
+}
+
+.labelPriority {
+  color: white;
+}
